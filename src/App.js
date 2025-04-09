@@ -10,7 +10,8 @@ const components = {
 export default function PCPicker() {
   const [selectedParts, setSelectedParts] = useState({});
 
-  const handleSelect = (category, value) => {
+  const handleSelect = (category, value) => 
+    {
     setSelectedParts((prev) => ({ ...
       prev, [category]: value }));
   };
@@ -40,6 +41,7 @@ export default function PCPicker() {
       </div>
     </div>
   );
+  
 }
 
 
